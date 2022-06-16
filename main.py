@@ -10,4 +10,16 @@ page = requests.get(URL + extension)
 #soup object
 soup = BeautifulSoup(page.content, "html.parser")
 
-print(page.text)
+
+driverName = soup.find(class_="dataCont")
+seriesResults = soup.find_all(class_="seriesHeader")
+
+print(driverName.find("h1").text.strip())
+print("")
+
+#finds series name and prints
+for sResult in seriesResults:
+    seriesElement = sResult.find("h1")
+    print(seriesElement.text.strip())
+
+#print(seriesResults)
