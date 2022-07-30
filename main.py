@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import json
 import time
 
+def changeDriverPage(driver):
+    page = requests.get(URL + "driver/" + driver.replace(" ", "_"))
+
 #Set url to var to make it easier to call as needed
 URL = "https://www.racing-reference.info/"
 #placeholder driver for testing
@@ -50,8 +53,7 @@ for driver in driverList:
     time.sleep(1)
 #extension = "driver/" + driver.replace(" ", "_") + "/"
 
-    #TODO: send this all into its own function
-    page = requests.get(URL + "driver/" + driver.replace(" ", "_"))
+    changeDriverPage(driver)
 
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -65,3 +67,5 @@ for driver in driverList:
 
     print (driver + ": " + cupWins.text.strip())
     time.sleep(1.5)
+
+
