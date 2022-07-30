@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import time
 
+#TODO: I should swap my casing to match BS4 maybe
+
 def changeDriverPage(driver):
     page = requests.get(URL + "driver/" + driver.replace(" ", "_"))
 
@@ -54,7 +56,6 @@ for driver in driverList:
 #extension = "driver/" + driver.replace(" ", "_") + "/"
 
     changeDriverPage(driver)
-
     soup = BeautifulSoup(page.content, "html.parser")
 
     driverFind = soup.find(class_="dataCont")
@@ -68,4 +69,13 @@ for driver in driverList:
     print (driver + ": " + cupWins.text.strip())
     time.sleep(1.5)
 
+# testing going to the homepage, finding the most recent race, grabbing drivers, and updating key stats
 
+page = requests.get(URL)
+soup = BeautifulSoup(page.content, "html.parser")
+
+#TODO: Explore if using the "new on the site" tab is actually viable for updating. I dont think it is?
+#For now this uses the "2022 season information" tab
+
+lastCupRaceFind = soup.find_all(class_="seriesMetaLink", href=True)
+print("https:" + lastCupRaceFind[1]['href'])
