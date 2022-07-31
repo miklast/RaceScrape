@@ -91,4 +91,10 @@ cupResultTbl = soup.find(class_= "tb race-results-tbl")
 cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
 #cupResultTblEven = cupResultTbl.find_all(class_="even")
 
-print(len(cupResultTblList))
+for entry in cupResultTblList:
+    entryTbl = entry.find_all(class_="col")
+    entryDriver = entryTbl[3].find("a")
+    print(entryDriver.string)
+
+
+#print(len(cupResultTblList))
