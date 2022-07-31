@@ -16,7 +16,7 @@ page = requests.get(URL + extension)
 
 #soup object
 soup = BeautifulSoup(page.content, "html.parser")
-
+'''
 #find driver name, series list, and results tables
 driverFind = soup.find(class_="dataCont")
 driverName = driverFind.find(("h1"))
@@ -68,7 +68,7 @@ for driver in driverList:
 
     print (driver + ": " + cupWins.text.strip())
     time.sleep(1.5)
-
+'''
 # testing going to the homepage, finding the most recent race, grabbing drivers, and updating key stats
 
 page = requests.get(URL)
@@ -82,4 +82,13 @@ lastCupRaceLink = "https:" + lastCupRaceFind[0]['href']
 #print("https:" + lastCupRaceFind[0]['href'])
 
 page = requests.get(lastCupRaceLink)
-print(page)
+soup = BeautifulSoup(page.content, "html.parser")
+
+
+cupDriverArray = []
+cupResultTbl = soup.find(class_= "tb race-results-tbl")
+
+cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
+#cupResultTblEven = cupResultTbl.find_all(class_="even")
+
+print(len(cupResultTblList))
