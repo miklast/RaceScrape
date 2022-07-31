@@ -7,7 +7,7 @@ import random
 #TODO: I should swap my casing to match BS4 maybe
 
 def changeDriverPage(driver):
-    page = requests.get(URL + "driver/" + driver.replace(" ", "_"))
+    page = requests.get(URL + "driver/" + driver.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
 
 def grabDriverWins(entry):
@@ -15,7 +15,8 @@ def grabDriverWins(entry):
     time.sleep(random.randint(1,4))
 
     #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
-    page = requests.get(URL + "driver/" + entry.replace(" ", "_"))
+    #TODO: theres bound to be a better way to do the following line
+    page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
     
 
