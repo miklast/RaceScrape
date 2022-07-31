@@ -78,4 +78,8 @@ soup = BeautifulSoup(page.content, "html.parser")
 #For now this uses the "2022 season information" tab
 
 lastCupRaceFind = soup.find_all(class_="seriesMetaLink", href=True)
-print("https:" + lastCupRaceFind[1]['href'])
+lastCupRaceLink = "https:" + lastCupRaceFind[0]['href']
+#print("https:" + lastCupRaceFind[0]['href'])
+
+page = requests.get(lastCupRaceLink)
+print(page)
