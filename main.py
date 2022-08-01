@@ -163,7 +163,7 @@ for entry in cupDriverArr:
 
 print(data)
 with open('sample.json', 'w') as outfile:
-    json.dump(data, outfile)
+    json.dump(list(data.values()), outfile, indent = 4)
     #y = json.dumps(driverFileAppend, indent=4, sort_keys=True)
     #print(y)
     #print(entry + ": " + grabDriverWins(entry))
