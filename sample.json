@@ -1,0 +1,270 @@
+{
+	"drivers": {
+		"0": {
+			"name": "Tyler Reddick",
+			"races": "96",
+			"wins": "2",
+			"top 5s": "13",
+			"top 10s": "35"
+		},
+		"1": {
+			"name": "Austin Cindric",
+			"races": "29",
+			"wins": "1",
+			"top 5s": "4",
+			"top 10s": "8"
+		},
+		"2": {
+			"name": "Harrison Burton",
+			"races": "23",
+			"wins": "0",
+			"top 5s": "1",
+			"top 10s": "2"
+		},
+		"3": {
+			"name": "Todd Gilliland",
+			"races": "22",
+			"wins": "0",
+			"top 5s": "1",
+			"top 10s": "1"
+		},
+		"4": {
+			"name": "Bubba Wallace",
+			"races": "170",
+			"wins": "1",
+			"top 5s": "9",
+			"top 10s": "17"
+		},
+		"5": {
+			"name": "Joey Logano",
+			"races": "493",
+			"wins": "29",
+			"top 5s": "143",
+			"top 10s": "249"
+		},
+		"6": {
+			"name": "A.J. Allmendinger",
+			"races": "0",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"7": {
+			"name": "Michael McDowell",
+			"races": "415",
+			"wins": "1",
+			"top 5s": "6",
+			"top 10s": "26"
+		},
+		"8": {
+			"name": "Cole Custer",
+			"races": "97",
+			"wins": "1",
+			"top 5s": "2",
+			"top 10s": "11"
+		},
+		"9": {
+			"name": "Chris Buescher",
+			"races": "243",
+			"wins": "1",
+			"top 5s": "8",
+			"top 10s": "34"
+		},
+		"10": {
+			"name": "Kyle Busch",
+			"races": "628",
+			"wins": "60",
+			"top 5s": "234",
+			"top 10s": "349"
+		},
+		"11": {
+			"name": "Christopher Bell",
+			"races": "94",
+			"wins": "2",
+			"top 5s": "15",
+			"top 10s": "35"
+		},
+		"12": {
+			"name": "Ricky Stenhouse, Jr.",
+			"races": "350",
+			"wins": "2",
+			"top 5s": "20",
+			"top 10s": "45"
+		},
+		"13": {
+			"name": "Denny Hamlin",
+			"races": "600",
+			"wins": "48",
+			"top 5s": "201",
+			"top 10s": "310"
+		},
+		"14": {
+			"name": "Erik Jones",
+			"races": "205",
+			"wins": "2",
+			"top 5s": "35",
+			"top 10s": "75"
+		},
+		"15": {
+			"name": "Chase Elliott",
+			"races": "243",
+			"wins": "17",
+			"top 5s": "82",
+			"top 10s": "132"
+		},
+		"16": {
+			"name": "Ty Gibbs",
+			"races": "2",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"17": {
+			"name": "Corey LaJoie",
+			"races": "186",
+			"wins": "0",
+			"top 5s": "1",
+			"top 10s": "5"
+		},
+		"18": {
+			"name": "Justin Haley",
+			"races": "58",
+			"wins": "1",
+			"top 5s": "2",
+			"top 10s": "5"
+		},
+		"19": {
+			"name": "Brad Keselowski",
+			"races": "471",
+			"wins": "35",
+			"top 5s": "138",
+			"top 10s": "230"
+		},
+		"20": {
+			"name": "Martin Truex, Jr.",
+			"races": "607",
+			"wins": "31",
+			"top 5s": "132",
+			"top 10s": "257"
+		},
+		"21": {
+			"name": "Josh Bilicki",
+			"races": "86",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "1"
+		},
+		"22": {
+			"name": "Chase Briscoe",
+			"races": "58",
+			"wins": "1",
+			"top 5s": "3",
+			"top 10s": "7"
+		},
+		"23": {
+			"name": "Cody Ware",
+			"races": "77",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"24": {
+			"name": "Josh Williams",
+			"races": "2",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"25": {
+			"name": "Ryan Blaney",
+			"races": "256",
+			"wins": "7",
+			"top 5s": "56",
+			"top 10s": "106"
+		},
+		"26": {
+			"name": "Ross Chastain",
+			"races": "137",
+			"wins": "2",
+			"top 5s": "13",
+			"top 10s": "23"
+		},
+		"27": {
+			"name": "Daniel Suarez",
+			"races": "201",
+			"wins": "1",
+			"top 5s": "14",
+			"top 10s": "45"
+		},
+		"28": {
+			"name": "Joey Hand",
+			"races": "5",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"29": {
+			"name": "Austin Dillon",
+			"races": "322",
+			"wins": "3",
+			"top 5s": "19",
+			"top 10s": "64"
+		},
+		"30": {
+			"name": "William Byron",
+			"races": "166",
+			"wins": "4",
+			"top 5s": "25",
+			"top 10s": "56"
+		},
+		"31": {
+			"name": "Alex Bowman",
+			"races": "247",
+			"wins": "7",
+			"top 5s": "27",
+			"top 10s": "66"
+		},
+		"32": {
+			"name": "Kevin Harvick",
+			"races": "776",
+			"wins": "58",
+			"top 5s": "241",
+			"top 10s": "424"
+		},
+		"33": {
+			"name": "Ty Dillon",
+			"races": "188",
+			"wins": "0",
+			"top 5s": "2",
+			"top 10s": "7"
+		},
+		"34": {
+			"name": "Kyle Larson",
+			"races": "281",
+			"wins": "17",
+			"top 5s": "85",
+			"top 10s": "138"
+		},
+		"35": {
+			"name": "Daniil Kvyat",
+			"races": "1",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"36": {
+			"name": "Loris Hezemans",
+			"races": "3",
+			"wins": "0",
+			"top 5s": "0",
+			"top 10s": "0"
+		},
+		"37": {
+			"name": "Aric Almirola",
+			"races": "410",
+			"wins": "3",
+			"top 5s": "28",
+			"top 10s": "90"
+		}
+	}
+}
