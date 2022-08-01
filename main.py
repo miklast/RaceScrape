@@ -125,12 +125,10 @@ cupResultTbl = soup.find(class_= "tb race-results-tbl")
 cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
 
 #setup for json output, all entrys go into a default "drivers" dictionary
-data = {
-    "drivers": {}
-}
+data = {}
 
-with open('sample.json', 'w') as outfile:
-    json.dump(data, outfile)
+#with open('sample.json', 'w') as outfile:
+    #json.dump(data, outfile)
 
 for entry in cupResultTblList:
     entryTbl = entry.find_all(class_="col")
@@ -156,7 +154,7 @@ for entry in cupDriverArr:
         "top 10s": cTopTens.text
     }
     '''
-    data['drivers'][eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top 5s": cTopFives.text, "top 10s": cTopTens.text}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top 5s": cTopFives.text, "top 10s": cTopTens.text}
 
     #print(data[eInt])
 
