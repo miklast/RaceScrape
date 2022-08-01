@@ -23,6 +23,20 @@ def grabDriverWins(entry):
     statTotals = soup.find_all(class_="tot")
     cupWins = statTotals[0].find_all(class_="col")[2]
     return(cupWins.text.strip())
+
+def findDriverStats(entry):
+    #random int to make it less sus
+    time.sleep(random.randint(1,4))
+
+    #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
+    #TODO: theres bound to be a better way to do the following line
+    page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
+    soup = BeautifulSoup(page.content, "html.parser")
+    
+
+    statTotals = soup.find_all(class_="tot")
+    #cupWins = statTotals[0].find_all(class_="col")[2]
+    return(statTotals)
     
 
 #Set url to var to make it easier to call as needed
@@ -110,14 +124,41 @@ cupResultTbl = soup.find(class_= "tb race-results-tbl")
 
 cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
 
+#setup for json output, all entrys go into a default "drivers" dictionary
+data = {
+    "drivers": []
+}
+
+with open('sample.json', 'w') as outfile:
+    json.dump(data, outfile)
+
 for entry in cupResultTblList:
     entryTbl = entry.find_all(class_="col")
     entryDriver = entryTbl[3].find("a")
     cupDriverArr.append(entryDriver.string)
 
 for entry in cupDriverArr:
-    
-    print(entry + ": " + grabDriverWins(entry))
+
+    stats = findDriverStats(entry)
+    #print(stats)
+    cTotalRaces = stats[0].find_all(class_="col")[1]
+    cupWins = stats[0].find_all(class_="col")[2]
+    cTopFives = stats[0].find_all(class_="col")[3]
+    cTopTens = stats[0].find_all(class_="col")[4]
+
+
+    driverFileAppend = {
+        "driver": entry,
+        "wins": cTotalRaces.text,
+        "top 5s": cTopFives.text,
+        "top 10s": cTopTens.text
+    }
+
+    with open('sample.json', 'w') as outfile:
+        json.append(driverFileAppend, outfile)
+    y = json.dumps(driverFileAppend, indent=4, sort_keys=True)
+    print(y)
+    #print(entry + ": " + grabDriverWins(entry))
 
 
 
