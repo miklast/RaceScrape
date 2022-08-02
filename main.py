@@ -1,3 +1,4 @@
+from lib2to3.pgen2 import driver
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -26,7 +27,7 @@ def grabDriverWins(entry):
 
 def findDriverStats(entry):
     #random int to make it less sus
-    time.sleep(random.randint(1,4))
+    time.sleep(random.randint(1,8))
 
     #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
     #TODO: theres bound to be a better way to do the following line
@@ -101,6 +102,38 @@ for driver in driverList:
     print (driver + ": " + cupWins.text.strip())
     time.sleep(1.5)
 '''
+
+# Code to collect all driver names from standings pages. 
+#TODO: find out if this includes everyone
+
+standYr = 2012
+driverList = []
+
+for year in range(11):
+    time.sleep(random.randint(2,10))
+    standExt = "standings/" + str(standYr) + "/W/"
+    print(URL + standExt)
+    page = requests.get(URL+ "standings/" + str(standYr) + "/W/")
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    standResultTbl = soup.find(class_= "tb standingsTbl")
+    cupDriverList = standResultTbl.find_all(class_= ["odd", "even"])
+
+    for entry in cupDriverList:
+        entryTbl = entry.find_all(class_="col")
+        entryDriver = entryTbl[1].find("a")
+
+
+        if entryDriver.string in driverList:
+            print(entryDriver.string)
+            continue
+        else:
+            driverList.append(entryDriver.string)
+    
+    standYr+=1
+
+print(driverList)
+
 # testing going to the homepage, finding the most recent race, grabbing drivers, and updating key stats
 
 
