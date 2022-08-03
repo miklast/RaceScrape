@@ -183,11 +183,11 @@ for entry in cupDriverArr:
     driverFileAppend = {
         "driver": entry,
         "wins": cTotalRaces.text,
-        "top 5s": cTopFives.text,
+        "top5s": cTopFives.text,
         "top 10s": cTopTens.text
     }
     '''
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top 5s": cTopFives.text, "top 10s": cTopTens.text}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text}
 
     #print(data[eInt])
 
