@@ -31,6 +31,8 @@ def findDriverStats(entry):
 
     #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
     #TODO: theres bound to be a better way to do the following line
+
+    #TODO: this code does not work for some names. Extra testing is needed to fix
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
     
@@ -173,11 +175,15 @@ eInt = 0
 for entry in cupDriverArr:
 
     stats = findDriverStats(entry)
-    #print(stats)
+    #I abstracted myself too far to get the years/championships, will need to fix this somehow
+    #cYrFirst = stats[0].
+    #cYrLast = stats[0].
+    #cChampionships = 
     cTotalRaces = stats[0].find_all(class_="col")[1]
     cupWins = stats[0].find_all(class_="col")[2]
     cTopFives = stats[0].find_all(class_="col")[3]
     cTopTens = stats[0].find_all(class_="col")[4]
+    cPoles = stats[0].find_all(class_="col")[5]
 
     '''
     driverFileAppend = {
@@ -187,7 +193,7 @@ for entry in cupDriverArr:
         "top 10s": cTopTens.text
     }
     '''
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text}
 
     #print(data[eInt])
 
