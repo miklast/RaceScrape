@@ -8,8 +8,11 @@ import random
 #TODO: I should swap my casing to match BS4 maybe
 
 def changeDriverPage(driver):
+    time.sleep(random.randint(1,8))
     page = requests.get(URL + "driver/" + driver.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
+
+    return soup
 
 def grabDriverWins(entry):
     #random int to make it less sus
@@ -29,17 +32,14 @@ def findDriverStats(entry):
     #random int to make it less sus
     time.sleep(random.randint(1,8))
 
-    #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
-    #TODO: theres bound to be a better way to do the following line
-
     #TODO: this code does not work for some names. Extra testing is needed to fix
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
     
 
-    statTotals = soup.find_all(class_="tot")
+    #statTotals = soup.find_all(class_="tot")
     #cupWins = statTotals[0].find_all(class_="col")[2]
-    return(statTotals)
+    return(soup)
     
 
 #Set url to var to make it easier to call as needed
@@ -111,7 +111,7 @@ for driver in driverList:
 standYr = 2012
 driverList = []
 
-for year in range(11):
+for year in range(1):
     time.sleep(random.randint(2,10))
     standExt = "standings/" + str(standYr) + "/W/"
     print(URL + standExt)
@@ -159,7 +159,7 @@ cupResultTbl = soup.find(class_= "tb race-results-tbl")
 
 cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
 
-#setup for json output, all entrys go into a default "drivers" dictionary
+#setup for json output, all entries go into a default "drivers" dictionary
 data = {}
 
 #with open('sample.json', 'w') as outfile:
@@ -175,15 +175,25 @@ eInt = 0
 for entry in cupDriverArr:
 
     stats = findDriverStats(entry)
+    statTotals = stats.find_all(class_="tot")
+    print("Stat Totals:")
+    print(statTotals)
+    statPerYr = stats.find_all(class_= ["odd", "even"])
+    print("Stat Per Yr:")
+    print(statPerYr)
+    getCLastYr = stats.find_all(class_= ["odd", "even"])[-1]
+    print("Stat Last Yr:")
+    print(getCLastYr)
     #I abstracted myself too far to get the years/championships, will need to fix this somehow
-    #cYrFirst = stats[0].
-    #cYrLast = stats[0].
+    cYrFirst = statPerYr[0].find_all(class_="col")[0]
+    cYrLast = getCLastYr[0].find_all(class_="col")[0]
+    print(cYrFirst + cYrLast)
     #cChampionships = 
-    cTotalRaces = stats[0].find_all(class_="col")[1]
-    cupWins = stats[0].find_all(class_="col")[2]
-    cTopFives = stats[0].find_all(class_="col")[3]
-    cTopTens = stats[0].find_all(class_="col")[4]
-    cPoles = stats[0].find_all(class_="col")[5]
+    cTotalRaces = statTotals[0].find_all(class_="col")[1]
+    cupWins = statTotals[0].find_all(class_="col")[2]
+    cTopFives = statTotals[0].find_all(class_="col")[3]
+    cTopTens = statTotals[0].find_all(class_="col")[4]
+    cPoles = statTotals[0].find_all(class_="col")[5]
 
     '''
     driverFileAppend = {
