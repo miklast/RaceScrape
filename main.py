@@ -1,5 +1,3 @@
-from calendar import c
-from lib2to3.pgen2 import driver
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -7,6 +5,8 @@ import time
 import random
 
 #TODO: I should swap my casing to match BS4 maybe
+
+
 
 def changeDriverPage(driver):
     page = requests.get(URL + "driver/" + driver.strip(".").replace(",","").replace(" ", "_"))
@@ -39,6 +39,7 @@ def findDriverStats(entry):
     
 
     statTotals = soup.find_all(class_="tot")
+    #print(statTotals)
     #cupWins = statTotals[0].find_all(class_="col")[2]
     return(statTotals)
     
@@ -51,6 +52,7 @@ page = requests.get(URL + extension)
 
 #soup object
 soup = BeautifulSoup(page.content, "html.parser")
+
 #TODO: ''' comments are bad practice. Remove them.
 '''
 #find driver name, series list, and results tables
@@ -160,7 +162,7 @@ cupResultTbl = soup.find(class_= "tb race-results-tbl")
 
 cupResultTblList = cupResultTbl.find_all(class_= ["odd", "even"])
 
-#setup for json output, all entrys go into a default "drivers" dictionary
+#setup for json output, all entries go into a default "drivers" dictionary
 data = {}
 
 #with open('sample.json', 'w') as outfile:
@@ -181,12 +183,12 @@ for entry in cupDriverArr:
     #cYrLast = stats[0].
     #cChampionships = 
     cYearsRaced = stats[0].find_all(class_="col")[0].text.strip(" years")
-    print(cYearsRaced)
     cTotalRaces = stats[0].find_all(class_="col")[1]
     cupWins = stats[0].find_all(class_="col")[2]
     cTopFives = stats[0].find_all(class_="col")[3]
     cTopTens = stats[0].find_all(class_="col")[4]
     cPoles = stats[0].find_all(class_="col")[5]
+ 
 
     '''
     driverFileAppend = {
