@@ -6,7 +6,8 @@
         "top5s": "13",
         "top10s": "35",
         "poles": "2",
-        "yearsRaced": "4"
+        "yearStart": "2019",
+        "yearLast": "2022"
     },
     {
         "name": "Austin Cindric",
@@ -15,7 +16,8 @@
         "top5s": "4",
         "top10s": "8",
         "poles": "1",
-        "yearsRaced": "2"
+        "yearStart": "2021",
+        "yearLast": "2022"
     },
     {
         "name": "Harrison Burton",
@@ -24,7 +26,8 @@
         "top5s": "1",
         "top10s": "2",
         "poles": "0",
-        "yearsRaced": "2"
+        "yearStart": "2021",
+        "yearLast": "2022"
     },
     {
         "name": "Todd Gilliland",
@@ -33,7 +36,8 @@
         "top5s": "1",
         "top10s": "1",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2022",
+        "yearLast": "2022"
     },
     {
         "name": "Bubba Wallace",
@@ -42,7 +46,8 @@
         "top5s": "9",
         "top10s": "17",
         "poles": "0",
-        "yearsRaced": "6"
+        "yearStart": "2017",
+        "yearLast": "2022"
     },
     {
         "name": "Joey Logano",
@@ -51,7 +56,8 @@
         "top5s": "143",
         "top10s": "249",
         "poles": "23",
-        "yearsRaced": "15"
+        "yearStart": "2008",
+        "yearLast": "2022"
     },
     {
         "name": "A.J. Allmendinger",
@@ -60,7 +66,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2019",
+        "yearLast": "2019"
     },
     {
         "name": "Michael McDowell",
@@ -69,7 +76,8 @@
         "top5s": "6",
         "top10s": "26",
         "poles": "0",
-        "yearsRaced": "15"
+        "yearStart": "2008",
+        "yearLast": "2022"
     },
     {
         "name": "Cole Custer",
@@ -78,7 +86,8 @@
         "top5s": "2",
         "top10s": "11",
         "poles": "1",
-        "yearsRaced": "4"
+        "yearStart": "2018",
+        "yearLast": "2022"
     },
     {
         "name": "Chris Buescher",
@@ -87,7 +96,8 @@
         "top5s": "8",
         "top10s": "34",
         "poles": "1",
-        "yearsRaced": "8"
+        "yearStart": "2015",
+        "yearLast": "2022"
     },
     {
         "name": "Kyle Busch",
@@ -96,7 +106,8 @@
         "top5s": "234",
         "top10s": "349",
         "poles": "32",
-        "yearsRaced": "20"
+        "yearStart": "2003",
+        "yearLast": "2022"
     },
     {
         "name": "Christopher Bell",
@@ -105,7 +116,8 @@
         "top5s": "15",
         "top10s": "35",
         "poles": "3",
-        "yearsRaced": "3"
+        "yearStart": "2020",
+        "yearLast": "2022"
     },
     {
         "name": "Ricky Stenhouse, Jr.",
@@ -114,7 +126,8 @@
         "top5s": "20",
         "top10s": "45",
         "poles": "3",
-        "yearsRaced": "12"
+        "yearStart": "2011",
+        "yearLast": "2022"
     },
     {
         "name": "Denny Hamlin",
@@ -123,7 +136,8 @@
         "top5s": "201",
         "top10s": "310",
         "poles": "36",
-        "yearsRaced": "18"
+        "yearStart": "2005",
+        "yearLast": "2022"
     },
     {
         "name": "Erik Jones",
@@ -132,7 +146,8 @@
         "top5s": "35",
         "top10s": "75",
         "poles": "2",
-        "yearsRaced": "7"
+        "yearStart": "2015",
+        "yearLast": "2022"
     },
     {
         "name": "Chase Elliott",
@@ -141,7 +156,8 @@
         "top5s": "82",
         "top10s": "132",
         "poles": "11",
-        "yearsRaced": "8"
+        "yearStart": "2015",
+        "yearLast": "2022"
     },
     {
         "name": "Ty Gibbs",
@@ -150,7 +166,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2022",
+        "yearLast": "2022"
     },
     {
         "name": "Corey LaJoie",
@@ -159,7 +176,8 @@
         "top5s": "1",
         "top10s": "5",
         "poles": "0",
-        "yearsRaced": "7"
+        "yearStart": "2014",
+        "yearLast": "2022"
     },
     {
         "name": "Justin Haley",
@@ -168,7 +186,8 @@
         "top5s": "2",
         "top10s": "5",
         "poles": "0",
-        "yearsRaced": "4"
+        "yearStart": "2019",
+        "yearLast": "2022"
     },
     {
         "name": "Brad Keselowski",
@@ -177,7 +196,8 @@
         "top5s": "138",
         "top10s": "230",
         "poles": "17",
-        "yearsRaced": "15"
+        "yearStart": "2008",
+        "yearLast": "2022"
     },
     {
         "name": "Martin Truex, Jr.",
@@ -186,7 +206,8 @@
         "top5s": "132",
         "top10s": "257",
         "poles": "20",
-        "yearsRaced": "19"
+        "yearStart": "2004",
+        "yearLast": "2022"
     },
     {
         "name": "Josh Bilicki",
@@ -195,7 +216,8 @@
         "top5s": "0",
         "top10s": "1",
         "poles": "0",
-        "yearsRaced": "6"
+        "yearStart": "2017",
+        "yearLast": "2022"
     },
     {
         "name": "Chase Briscoe",
@@ -204,7 +226,8 @@
         "top5s": "3",
         "top10s": "7",
         "poles": "1",
-        "yearsRaced": "2"
+        "yearStart": "2021",
+        "yearLast": "2022"
     },
     {
         "name": "Cody Ware",
@@ -213,7 +236,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "7"
+        "yearStart": "2016",
+        "yearLast": "2022"
     },
     {
         "name": "Josh Williams",
@@ -222,7 +246,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2022",
+        "yearLast": "2022"
     },
     {
         "name": "Ryan Blaney",
@@ -231,7 +256,8 @@
         "top5s": "56",
         "top10s": "106",
         "poles": "9",
-        "yearsRaced": "9"
+        "yearStart": "2014",
+        "yearLast": "2022"
     },
     {
         "name": "Ross Chastain",
@@ -240,7 +266,8 @@
         "top5s": "13",
         "top10s": "23",
         "poles": "0",
-        "yearsRaced": "6"
+        "yearStart": "2017",
+        "yearLast": "2022"
     },
     {
         "name": "Daniel Suarez",
@@ -249,7 +276,8 @@
         "top5s": "14",
         "top10s": "45",
         "poles": "2",
-        "yearsRaced": "6"
+        "yearStart": "2017",
+        "yearLast": "2022"
     },
     {
         "name": "Joey Hand",
@@ -258,7 +286,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "2"
+        "yearStart": "2021",
+        "yearLast": "2022"
     },
     {
         "name": "Austin Dillon",
@@ -267,7 +296,8 @@
         "top5s": "19",
         "top10s": "64",
         "poles": "6",
-        "yearsRaced": "12"
+        "yearStart": "2011",
+        "yearLast": "2022"
     },
     {
         "name": "William Byron",
@@ -276,7 +306,8 @@
         "top5s": "25",
         "top10s": "56",
         "poles": "7",
-        "yearsRaced": "5"
+        "yearStart": "2018",
+        "yearLast": "2022"
     },
     {
         "name": "Alex Bowman",
@@ -285,7 +316,8 @@
         "top5s": "27",
         "top10s": "66",
         "poles": "3",
-        "yearsRaced": "8"
+        "yearStart": "2014",
+        "yearLast": "2022"
     },
     {
         "name": "Kevin Harvick",
@@ -294,7 +326,8 @@
         "top5s": "241",
         "top10s": "424",
         "poles": "31",
-        "yearsRaced": "22"
+        "yearStart": "2001",
+        "yearLast": "2022"
     },
     {
         "name": "Ty Dillon",
@@ -303,7 +336,8 @@
         "top5s": "2",
         "top10s": "7",
         "poles": "0",
-        "yearsRaced": "9"
+        "yearStart": "2014",
+        "yearLast": "2022"
     },
     {
         "name": "Kyle Larson",
@@ -312,7 +346,8 @@
         "top5s": "85",
         "top10s": "138",
         "poles": "12",
-        "yearsRaced": "10"
+        "yearStart": "2013",
+        "yearLast": "2022"
     },
     {
         "name": "Daniil Kvyat",
@@ -321,7 +356,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2022",
+        "yearLast": "2022"
     },
     {
         "name": "Loris Hezemans",
@@ -330,7 +366,8 @@
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearsRaced": "1"
+        "yearStart": "2022",
+        "yearLast": "2022"
     },
     {
         "name": "Aric Almirola",
@@ -339,6 +376,7 @@
         "top5s": "28",
         "top10s": "90",
         "poles": "3",
-        "yearsRaced": "15"
+        "yearStart": "2007",
+        "yearLast": "2022"
     }
 ]
