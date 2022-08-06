@@ -181,7 +181,7 @@ for entry in cupDriverArr:
     #The follwing function is broken, figure out why
     #stats = findDriverStats(entry)
 
-    time.sleep(random.randint(1,8))
+    time.sleep(random.randint(2,10))
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -190,11 +190,25 @@ for entry in cupDriverArr:
     statPerYr = soup.find_all(class_= ["odd", "even"])    
     stats = soup.find_all(class_="tot")
     lastYrTest = stats[0].previous_sibling.find_all(class_="col")[0]
-    print(lastYrTest)
+    #print(lastYrTest)
+
+    #Checks to see if a driver competed in the first listed year via their "X of Y" races
+    #test example is Kyle Busch, 2003 cup was 0 of 36 and was not his first cup year
+    #TODO: Fix the issue that requires the use of an extra variable outside the loop
+    yrStartTest = 0
+    for x in statPerYr:
+        if (int(statPerYr[yrStartTest].find_all(class_="col")[2].text[:3]) == 0):
+            yrStartTest+=1
+            continue
+        else:
+            cYrFirst = statPerYr[yrStartTest].find_all(class_="col")[0].text.replace("of 36", '').strip()
+            break
+
+    #print(cYrFirst)
 
 
     #I abstracted myself too far to get the years/championships, will need to fix this somehow
-    cYrFirst = statPerYr[0].find_all(class_="col")[0]
+    #cYrFirst = statPerYr[0].find_all(class_="col")[0]
     #cChampionships = 
     cYrLast = lastYrTest
     cTotalRaces = stats[0].find_all(class_="col")[1]
@@ -214,7 +228,7 @@ for entry in cupDriverArr:
     '''
 
     #should the data be proper numbers? hmmm
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst.text, "yearLast":  cYrLast.text}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast.text}
 
     #print(data[eInt])
 
