@@ -175,14 +175,28 @@ for entry in cupResultTblList:
 
 eInt = 0
 
+
 for entry in cupDriverArr:
 
-    stats = findDriverStats(entry)
+    #The follwing function is broken, figure out why
+    #stats = findDriverStats(entry)
+
+    time.sleep(random.randint(1,8))
+    page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    statTbl = soup.find_all(class_= ["tb"])
+
+    statPerYr = soup.find_all(class_= ["odd", "even"])    
+    stats = soup.find_all(class_="tot")
+    lastYrTest = stats[0].previous_sibling.find_all(class_="col")[0]
+    print(lastYrTest)
+
+
     #I abstracted myself too far to get the years/championships, will need to fix this somehow
-    #cYrFirst = stats[0].
-    #cYrLast = stats[0].
+    cYrFirst = statPerYr[0].find_all(class_="col")[0]
     #cChampionships = 
-    cYearsRaced = stats[0].find_all(class_="col")[0].text.strip(" years")
+    cYrLast = lastYrTest
     cTotalRaces = stats[0].find_all(class_="col")[1]
     cupWins = stats[0].find_all(class_="col")[2]
     cTopFives = stats[0].find_all(class_="col")[3]
@@ -198,7 +212,9 @@ for entry in cupDriverArr:
         "top 10s": cTopTens.text
     }
     '''
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearsRaced": cYearsRaced}
+
+    #should the data be proper numbers? hmmm
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst.text, "yearLast":  cYrLast.text}
 
     #print(data[eInt])
 
