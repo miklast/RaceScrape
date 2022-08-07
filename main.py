@@ -221,7 +221,7 @@ for entry in cupDriverArr:
             break
 
     champCount = 0
-    counter = 1
+    counter = 0
 
 
     for x in tbFind:
