@@ -153,6 +153,7 @@ lastCupRaceFind = soup.find_all(class_="seriesMetaLink", href=True)
 lastCupRaceLink = "https:" + lastCupRaceFind[0]['href']
 
 page = requests.get(lastCupRaceLink)
+#page = requests.get("https://www.racing-reference.info/race-results/1991_Daytona_500_By_STP/W/")
 soup = BeautifulSoup(page.content, "html.parser")
 
 
@@ -186,31 +187,45 @@ for entry in cupDriverArr:
     soup = BeautifulSoup(page.content, "html.parser")
 
     statTbl = soup.find_all(class_= ["tb"])
+    tbFind = statTbl[1].find_all(class_= ["odd", "even"])
 
-    statPerYr = soup.find_all(class_= ["odd", "even"])    
+    
     stats = soup.find_all(class_="tot")
-    lastYrTest = stats[0].previous_sibling.find_all(class_="col")[0]
-    #print(lastYrTest)
+
+    #old way of finding the last year
+    #lastYrTest = stats[0].previous_sibling.find_all(class_="col")[0]
+
 
     #Checks to see if a driver competed in the first listed year via their "X of Y" races
     #test example is Kyle Busch, 2003 cup was 0 of 36 and was not his first cup year
     #TODO: Fix the issue that requires the use of an extra variable outside the loop
     yrStartTest = 0
-    for x in statPerYr:
-        if (int(statPerYr[yrStartTest].find_all(class_="col")[2].text[:3]) == 0):
+    for x in tbFind:
+        if (int(tbFind[yrStartTest].find_all(class_="col")[2].text[:3]) == 0):
             yrStartTest+=1
             continue
         else:
-            cYrFirst = statPerYr[yrStartTest].find_all(class_="col")[0].text.replace("of 36", '').strip()
+            cYrFirst = tbFind[yrStartTest].find_all(class_="col")[0].text.replace("of 36", '').strip()
             break
 
-    #print(cYrFirst)
+    
+    yrEndTest = len(tbFind)-1
+
+    #This goes and checks the end year for any starts
+    for x in tbFind:
+        print(x)
+        if (int(tbFind[yrEndTest].find_all(class_="col")[2].text[:3]) == 0):
+            yrEndTest-=1
+            continue
+        else:
+            cYrLast = tbFind[yrEndTest].find_all(class_="col")[0].text.replace("of 36", '').strip()
+            break
+
+    
+
 
 
     #I abstracted myself too far to get the years/championships, will need to fix this somehow
-    #cYrFirst = statPerYr[0].find_all(class_="col")[0]
-    #cChampionships = 
-    cYrLast = lastYrTest
     cTotalRaces = stats[0].find_all(class_="col")[1]
     cupWins = stats[0].find_all(class_="col")[2]
     cTopFives = stats[0].find_all(class_="col")[3]
@@ -228,7 +243,7 @@ for entry in cupDriverArr:
     '''
 
     #should the data be proper numbers? hmmm
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast.text}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast}
 
     #print(data[eInt])
 
