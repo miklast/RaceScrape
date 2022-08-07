@@ -1,45 +1,5 @@
 [
     {
-        "name": "Ernie Irvan",
-        "races": "313",
-        "wins": "15",
-        "top5s": "68",
-        "top10s": "124",
-        "poles": "22",
-        "yearStart": "1987",
-        "yearLast": "1999"
-    },
-    {
-        "name": "Sterling Marlin",
-        "races": "748",
-        "wins": "10",
-        "top5s": "83",
-        "top10s": "216",
-        "poles": "11",
-        "yearStart": "1976",
-        "yearLast": "2009"
-    },
-    {
-        "name": "Joe Ruttman",
-        "races": "225",
-        "wins": "0",
-        "top5s": "19",
-        "top10s": "60",
-        "poles": "3",
-        "yearStart": "1963",
-        "yearLast": "2004"
-    },
-    {
-        "name": "Rick Mast",
-        "races": "364",
-        "wins": "0",
-        "top5s": "7",
-        "top10s": "36",
-        "poles": "4",
-        "yearStart": "1988",
-        "yearLast": "2002"
-    },
-    {
         "name": "Dale Earnhardt",
         "races": "676",
         "wins": "76",
@@ -47,257 +7,30 @@
         "top10s": "428",
         "poles": "22",
         "yearStart": "1975",
-        "yearLast": "2001"
+        "yearLast": "2001",
+        "Championships": "7"
     },
     {
-        "name": "Dale Jarrett",
-        "races": "668",
-        "wins": "32",
-        "top5s": "163",
-        "top10s": "260",
-        "poles": "16",
-        "yearStart": "1984",
-        "yearLast": "2008"
-    },
-    {
-        "name": "Bobby Hillin, Jr.",
-        "races": "334",
-        "wins": "1",
-        "top5s": "8",
-        "top10s": "43",
-        "poles": "0",
-        "yearStart": "1982",
-        "yearLast": "2000"
-    },
-    {
-        "name": "Alan Kulwicki",
-        "races": "207",
-        "wins": "5",
-        "top5s": "38",
-        "top10s": "75",
-        "poles": "24",
-        "yearStart": "1985",
-        "yearLast": "1993"
-    },
-    {
-        "name": "Ricky Rudd",
-        "races": "906",
-        "wins": "23",
-        "top5s": "194",
-        "top10s": "374",
-        "poles": "29",
-        "yearStart": "1975",
-        "yearLast": "2007"
-    },
-    {
-        "name": "Bobby Hamilton",
-        "races": "371",
-        "wins": "4",
-        "top5s": "20",
-        "top10s": "67",
-        "poles": "5",
-        "yearStart": "1989",
-        "yearLast": "2005"
-    },
-    {
-        "name": "Dick Trickle",
-        "races": "303",
-        "wins": "0",
-        "top5s": "15",
-        "top10s": "36",
-        "poles": "1",
-        "yearStart": "1970",
-        "yearLast": "2002"
-    },
-    {
-        "name": "Eddie Bierschwale",
-        "races": "117",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "1",
-        "poles": "0",
-        "yearStart": "1983",
-        "yearLast": "1992"
-    },
-    {
-        "name": "Terry Labonte",
-        "races": "890",
-        "wins": "22",
-        "top5s": "182",
-        "top10s": "361",
-        "poles": "27",
-        "yearStart": "1978",
-        "yearLast": "2014"
-    },
-    {
-        "name": "Chad Little",
-        "races": "217",
-        "wins": "0",
-        "top5s": "1",
-        "top10s": "16",
-        "poles": "0",
-        "yearStart": "1986",
-        "yearLast": "2002"
-    },
-    {
-        "name": "Davey Allison",
-        "races": "191",
-        "wins": "19",
-        "top5s": "66",
-        "top10s": "92",
-        "poles": "14",
-        "yearStart": "1985",
-        "yearLast": "1993"
-    },
-    {
-        "name": "Kyle Petty",
-        "races": "829",
-        "wins": "8",
-        "top5s": "52",
-        "top10s": "173",
-        "poles": "8",
-        "yearStart": "1979",
-        "yearLast": "2008"
-    },
-    {
-        "name": "Mickey Gibbs",
-        "races": "36",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "0",
-        "poles": "0",
-        "yearStart": "1988",
-        "yearLast": "1991"
-    },
-    {
-        "name": "Robby Gordon",
-        "races": "396",
-        "wins": "3",
-        "top5s": "16",
-        "top10s": "39",
-        "poles": "1",
+        "name": "Bobby Labonte",
+        "races": "729",
+        "wins": "21",
+        "top5s": "115",
+        "top10s": "203",
+        "poles": "26",
         "yearStart": "1991",
-        "yearLast": "2012"
+        "yearLast": "2016",
+        "Championships": "1"
     },
     {
-        "name": "Richard Petty",
-        "races": "1184",
-        "wins": "200",
-        "top5s": "555",
-        "top10s": "712",
-        "poles": "123",
-        "yearStart": "1958",
-        "yearLast": "1992"
-    },
-    {
-        "name": "Phil Barkdoll",
-        "races": "23",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "0",
-        "poles": "0",
-        "yearStart": "1984",
-        "yearLast": "1992"
-    },
-    {
-        "name": "Mark Martin",
-        "races": "882",
-        "wins": "40",
-        "top5s": "271",
-        "top10s": "453",
-        "poles": "56",
-        "yearStart": "1981",
-        "yearLast": "2013"
-    },
-    {
-        "name": "Brett Bodine",
-        "races": "480",
-        "wins": "1",
-        "top5s": "16",
-        "top10s": "61",
-        "poles": "5",
-        "yearStart": "1986",
-        "yearLast": "2003"
-    },
-    {
-        "name": "Jim Sauter",
-        "races": "76",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "4",
-        "poles": "0",
-        "yearStart": "1980",
-        "yearLast": "1996"
-    },
-    {
-        "name": "Darrell Waltrip",
-        "races": "809",
-        "wins": "84",
-        "top5s": "276",
-        "top10s": "390",
-        "poles": "59",
-        "yearStart": "1972",
-        "yearLast": "2000"
-    },
-    {
-        "name": "Harry Gant",
-        "races": "474",
-        "wins": "18",
-        "top5s": "123",
-        "top10s": "208",
-        "poles": "17",
-        "yearStart": "1973",
-        "yearLast": "1994"
-    },
-    {
-        "name": "Derrike Cope",
-        "races": "428",
-        "wins": "2",
-        "top5s": "6",
-        "top10s": "32",
-        "poles": "1",
-        "yearStart": "1982",
-        "yearLast": "2021"
-    },
-    {
-        "name": "Rusty Wallace",
-        "races": "706",
-        "wins": "55",
-        "top5s": "202",
-        "top10s": "349",
-        "poles": "36",
-        "yearStart": "1980",
-        "yearLast": "2005"
-    },
-    {
-        "name": "Bill Elliott",
-        "races": "828",
-        "wins": "44",
-        "top5s": "175",
-        "top10s": "320",
-        "poles": "55",
-        "yearStart": "1976",
-        "yearLast": "2012"
-    },
-    {
-        "name": "Hut Stricklin",
-        "races": "328",
-        "wins": "0",
-        "top5s": "8",
-        "top10s": "29",
-        "poles": "1",
-        "yearStart": "1987",
-        "yearLast": "2002"
-    },
-    {
-        "name": "Ted Musgrave",
-        "races": "305",
-        "wins": "0",
-        "top5s": "20",
-        "top10s": "55",
-        "poles": "5",
-        "yearStart": "1990",
-        "yearLast": "2003"
+        "name": "Jeremy Mayfield",
+        "races": "433",
+        "wins": "5",
+        "top5s": "48",
+        "top10s": "96",
+        "poles": "9",
+        "yearStart": "1993",
+        "yearLast": "2009",
+        "Championships": "0"
     },
     {
         "name": "Ken Schrader",
@@ -307,67 +40,52 @@
         "top10s": "184",
         "poles": "23",
         "yearStart": "1984",
-        "yearLast": "2013"
+        "yearLast": "2013",
+        "Championships": "0"
     },
     {
-        "name": "Geoffrey Bodine",
-        "races": "575",
-        "wins": "18",
-        "top5s": "100",
-        "top10s": "190",
-        "poles": "37",
-        "yearStart": "1979",
-        "yearLast": "2011"
-    },
-    {
-        "name": "Rick Wilson",
-        "races": "206",
-        "wins": "0",
-        "top5s": "5",
-        "top10s": "23",
-        "poles": "1",
-        "yearStart": "1980",
-        "yearLast": "1997"
-    },
-    {
-        "name": "Morgan Shepherd",
-        "races": "517",
-        "wins": "4",
-        "top5s": "63",
-        "top10s": "168",
-        "poles": "7",
-        "yearStart": "1970",
-        "yearLast": "2014"
-    },
-    {
-        "name": "Dave Marcis",
-        "races": "883",
-        "wins": "5",
-        "top5s": "94",
-        "top10s": "222",
-        "poles": "14",
-        "yearStart": "1968",
-        "yearLast": "2002"
-    },
-    {
-        "name": "Jeff Purvis",
-        "races": "50",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "0",
-        "poles": "0",
-        "yearStart": "1990",
-        "yearLast": "2001"
-    },
-    {
-        "name": "Buddy Baker",
-        "races": "700",
-        "wins": "19",
+        "name": "Rusty Wallace",
+        "races": "706",
+        "wins": "55",
         "top5s": "202",
-        "top10s": "311",
-        "poles": "38",
-        "yearStart": "1959",
-        "yearLast": "1992"
+        "top10s": "349",
+        "poles": "36",
+        "yearStart": "1980",
+        "yearLast": "2005",
+        "Championships": "1"
+    },
+    {
+        "name": "Ernie Irvan",
+        "races": "313",
+        "wins": "15",
+        "top5s": "68",
+        "top10s": "124",
+        "poles": "22",
+        "yearStart": "1987",
+        "yearLast": "1999",
+        "Championships": "0"
+    },
+    {
+        "name": "Chad Little",
+        "races": "217",
+        "wins": "0",
+        "top5s": "1",
+        "top10s": "16",
+        "poles": "0",
+        "yearStart": "1986",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Mike Skinner",
+        "races": "286",
+        "wins": "0",
+        "top5s": "10",
+        "top10s": "39",
+        "poles": "6",
+        "yearStart": "1986",
+        "yearLast": "2012",
+        "Championships": "0"
     },
     {
         "name": "Michael Waltrip",
@@ -377,17 +95,63 @@
         "top10s": "133",
         "poles": "4",
         "yearStart": "1985",
-        "yearLast": "2017"
+        "yearLast": "2017",
+        "Championships": "0"
     },
     {
-        "name": "Jimmy Means",
-        "races": "455",
-        "wins": "0",
-        "top5s": "0",
-        "top10s": "17",
-        "poles": "0",
+        "name": "Bill Elliott",
+        "races": "828",
+        "wins": "44",
+        "top5s": "175",
+        "top10s": "320",
+        "poles": "55",
         "yearStart": "1976",
-        "yearLast": "1993"
+        "yearLast": "2012",
+        "Championships": "1"
+    },
+    {
+        "name": "Kyle Petty",
+        "races": "829",
+        "wins": "8",
+        "top5s": "52",
+        "top10s": "173",
+        "poles": "8",
+        "yearStart": "1979",
+        "yearLast": "2008",
+        "Championships": "0"
+    },
+    {
+        "name": "Bobby Hamilton",
+        "races": "371",
+        "wins": "4",
+        "top5s": "20",
+        "top10s": "67",
+        "poles": "5",
+        "yearStart": "1989",
+        "yearLast": "2005",
+        "Championships": "0"
+    },
+    {
+        "name": "Terry Labonte",
+        "races": "890",
+        "wins": "22",
+        "top5s": "182",
+        "top10s": "361",
+        "poles": "27",
+        "yearStart": "1978",
+        "yearLast": "2014",
+        "Championships": "2"
+    },
+    {
+        "name": "Ricky Craven",
+        "races": "278",
+        "wins": "2",
+        "top5s": "17",
+        "top10s": "41",
+        "poles": "6",
+        "yearStart": "1991",
+        "yearLast": "2004",
+        "Championships": "0"
     },
     {
         "name": "Jimmy Spencer",
@@ -397,17 +161,261 @@
         "top10s": "80",
         "poles": "3",
         "yearStart": "1989",
-        "yearLast": "2006"
+        "yearLast": "2006",
+        "Championships": "0"
     },
     {
-        "name": "Sammy Swindell",
-        "races": "2",
+        "name": "Jeff Gordon",
+        "races": "805",
+        "wins": "93",
+        "top5s": "325",
+        "top10s": "477",
+        "poles": "81",
+        "yearStart": "1992",
+        "yearLast": "2016",
+        "Championships": "4"
+    },
+    {
+        "name": "Lake Speed",
+        "races": "402",
+        "wins": "1",
+        "top5s": "16",
+        "top10s": "75",
+        "poles": "0",
+        "yearStart": "1980",
+        "yearLast": "1998",
+        "Championships": "0"
+    },
+    {
+        "name": "John Andretti",
+        "races": "393",
+        "wins": "2",
+        "top5s": "13",
+        "top10s": "37",
+        "poles": "4",
+        "yearStart": "1993",
+        "yearLast": "2010",
+        "Championships": "0"
+    },
+    {
+        "name": "Kenny Irwin, Jr.",
+        "races": "87",
+        "wins": "0",
+        "top5s": "4",
+        "top10s": "12",
+        "poles": "3",
+        "yearStart": "1997",
+        "yearLast": "2000",
+        "Championships": "0"
+    },
+    {
+        "name": "Ted Musgrave",
+        "races": "305",
+        "wins": "0",
+        "top5s": "20",
+        "top10s": "55",
+        "poles": "5",
+        "yearStart": "1990",
+        "yearLast": "2003",
+        "Championships": "0"
+    },
+    {
+        "name": "Jerry Nadeau",
+        "races": "177",
+        "wins": "1",
+        "top5s": "9",
+        "top10s": "19",
+        "poles": "0",
+        "yearStart": "1997",
+        "yearLast": "2003",
+        "Championships": "0"
+    },
+    {
+        "name": "Sterling Marlin",
+        "races": "748",
+        "wins": "10",
+        "top5s": "83",
+        "top10s": "216",
+        "poles": "11",
+        "yearStart": "1976",
+        "yearLast": "2009",
+        "Championships": "0"
+    },
+    {
+        "name": "Mike Wallace",
+        "races": "197",
+        "wins": "0",
+        "top5s": "3",
+        "top10s": "14",
+        "poles": "0",
+        "yearStart": "1991",
+        "yearLast": "2015",
+        "Championships": "0"
+    },
+    {
+        "name": "Brett Bodine",
+        "races": "480",
+        "wins": "1",
+        "top5s": "16",
+        "top10s": "61",
+        "poles": "5",
+        "yearStart": "1986",
+        "yearLast": "2003",
+        "Championships": "0"
+    },
+    {
+        "name": "Ward Burton",
+        "races": "375",
+        "wins": "5",
+        "top5s": "24",
+        "top10s": "82",
+        "poles": "7",
+        "yearStart": "1994",
+        "yearLast": "2007",
+        "Championships": "0"
+    },
+    {
+        "name": "Joe Nemechek",
+        "races": "674",
+        "wins": "4",
+        "top5s": "18",
+        "top10s": "62",
+        "poles": "10",
+        "yearStart": "1993",
+        "yearLast": "2019",
+        "Championships": "0"
+    },
+    {
+        "name": "Dick Trickle",
+        "races": "303",
+        "wins": "0",
+        "top5s": "15",
+        "top10s": "36",
+        "poles": "1",
+        "yearStart": "1970",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Steve Grissom",
+        "races": "151",
+        "wins": "0",
+        "top5s": "5",
+        "top10s": "18",
+        "poles": "0",
+        "yearStart": "1990",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Andy Hillenburg",
+        "races": "16",
         "wins": "0",
         "top5s": "0",
         "top10s": "0",
         "poles": "0",
-        "yearStart": "1985",
-        "yearLast": "1991"
+        "yearStart": "1991",
+        "yearLast": "2004",
+        "Championships": "0"
+    },
+    {
+        "name": "Rick Mast",
+        "races": "364",
+        "wins": "0",
+        "top5s": "7",
+        "top10s": "36",
+        "poles": "4",
+        "yearStart": "1988",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Geoffrey Bodine",
+        "races": "575",
+        "wins": "18",
+        "top5s": "100",
+        "top10s": "190",
+        "poles": "37",
+        "yearStart": "1979",
+        "yearLast": "2011",
+        "Championships": "0"
+    },
+    {
+        "name": "Robert Pressley",
+        "races": "205",
+        "wins": "0",
+        "top5s": "5",
+        "top10s": "11",
+        "poles": "0",
+        "yearStart": "1994",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Darrell Waltrip",
+        "races": "809",
+        "wins": "84",
+        "top5s": "276",
+        "top10s": "390",
+        "poles": "59",
+        "yearStart": "1972",
+        "yearLast": "2000",
+        "Championships": "3"
+    },
+    {
+        "name": "Dale Jarrett",
+        "races": "668",
+        "wins": "32",
+        "top5s": "163",
+        "top10s": "260",
+        "poles": "16",
+        "yearStart": "1984",
+        "yearLast": "2008",
+        "Championships": "1"
+    },
+    {
+        "name": "Billy Standridge",
+        "races": "23",
+        "wins": "0",
+        "top5s": "0",
+        "top10s": "0",
+        "poles": "0",
+        "yearStart": "1994",
+        "yearLast": "1998",
+        "Championships": "0"
+    },
+    {
+        "name": "Dave Marcis",
+        "races": "883",
+        "wins": "5",
+        "top5s": "94",
+        "top10s": "222",
+        "poles": "14",
+        "yearStart": "1968",
+        "yearLast": "2002",
+        "Championships": "0"
+    },
+    {
+        "name": "Derrike Cope",
+        "races": "428",
+        "wins": "2",
+        "top5s": "6",
+        "top10s": "32",
+        "poles": "1",
+        "yearStart": "1982",
+        "yearLast": "2021",
+        "Championships": "0"
+    },
+    {
+        "name": "Mark Martin",
+        "races": "882",
+        "wins": "40",
+        "top5s": "271",
+        "top10s": "453",
+        "poles": "56",
+        "yearStart": "1981",
+        "yearLast": "2013",
+        "Championships": "0"
     },
     {
         "name": "Greg Sacks",
@@ -417,6 +425,51 @@
         "top10s": "20",
         "poles": "2",
         "yearStart": "1983",
-        "yearLast": "2005"
+        "yearLast": "2005",
+        "Championships": "0"
+    },
+    {
+        "name": "Jeff Burton",
+        "races": "695",
+        "wins": "21",
+        "top5s": "134",
+        "top10s": "254",
+        "poles": "6",
+        "yearStart": "1993",
+        "yearLast": "2014",
+        "Championships": "0"
+    },
+    {
+        "name": "Steve Park",
+        "races": "183",
+        "wins": "2",
+        "top5s": "12",
+        "top10s": "35",
+        "poles": "4",
+        "yearStart": "1997",
+        "yearLast": "2011",
+        "Championships": "0"
+    },
+    {
+        "name": "Ricky Rudd",
+        "races": "906",
+        "wins": "23",
+        "top5s": "194",
+        "top10s": "374",
+        "poles": "29",
+        "yearStart": "1975",
+        "yearLast": "2007",
+        "Championships": "0"
+    },
+    {
+        "name": "Kevin Lepage",
+        "races": "201",
+        "wins": "0",
+        "top5s": "2",
+        "top10s": "9",
+        "poles": "1",
+        "yearStart": "1997",
+        "yearLast": "2007",
+        "Championships": "0"
     }
 ]

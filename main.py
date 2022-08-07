@@ -152,8 +152,8 @@ soup = BeautifulSoup(page.content, "html.parser")
 lastCupRaceFind = soup.find_all(class_="seriesMetaLink", href=True)
 lastCupRaceLink = "https:" + lastCupRaceFind[0]['href']
 
-page = requests.get(lastCupRaceLink)
-#page = requests.get("https://www.racing-reference.info/race-results/1991_Daytona_500_By_STP/W/")
+#page = requests.get(lastCupRaceLink)
+page = requests.get("https://www.racing-reference.info/race-results/1998_Daytona_500/W/")
 soup = BeautifulSoup(page.content, "html.parser")
 
 
@@ -213,13 +213,37 @@ for entry in cupDriverArr:
 
     #This goes and checks the end year for any starts
     for x in tbFind:
-        print(x)
         if (int(tbFind[yrEndTest].find_all(class_="col")[2].text[:3]) == 0):
             yrEndTest-=1
             continue
         else:
             cYrLast = tbFind[yrEndTest].find_all(class_="col")[0].text.replace("of 36", '').strip()
             break
+
+    champCount = 0
+    counter = 1
+
+
+    for x in tbFind:
+
+        try:
+            cmpCheck = tbFind[counter].find_all(class_="col")[10].text
+            cmpPrintTest=tbFind[counter].find_all(class_="col")[10]
+
+            if (int(cmpCheck) == 1):
+                champCount+=1
+                counter+=1
+                continue
+            else:
+                counter+=1
+                continue
+            
+        except:
+            print("bad unicode prob " + entry)
+            print(counter)
+            print(tbFind[counter-1].find_all(class_="col"))
+            counter+=1
+            continue
 
     
 
@@ -243,7 +267,7 @@ for entry in cupDriverArr:
     '''
 
     #should the data be proper numbers? hmmm
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast, "Championships": str(champCount)}
 
     #print(data[eInt])
 
