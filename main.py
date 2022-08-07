@@ -267,7 +267,7 @@ for entry in cupDriverArr:
     '''
 
     #should the data be proper numbers? hmmm
-    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast, "Championships": str(champCount)}
+    data[eInt] = {"name": entry, "races": cTotalRaces.text, "wins": cupWins.text, "top5s": cTopFives.text, "top10s": cTopTens.text, "poles": cPoles.text, "yearStart": cYrFirst, "yearLast":  cYrLast, "championships": str(champCount)}
 
     #print(data[eInt])
 
