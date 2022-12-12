@@ -8,15 +8,14 @@ import random
 
 
 
-def changeDriverPage(driver):
-    page = requests.get(URL + "driver/" + driver.strip(".").replace(",","").replace(" ", "_"))
-    soup = BeautifulSoup(page.content, "html.parser")
+# def changeDriverPage(driver):
+#     page = requests.get(URL + "driver/" + driver.strip(".").replace(",","").replace(" ", "_"))
+#     soup = BeautifulSoup(page.content, "html.parser")
 
 def grabDriverWins(entry):
     #random int to make it less sus
-    time.sleep(random.randint(2,7))
+    time.sleep(random.randint(1,4))
 
-    #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
     #TODO: theres bound to be a better way to do the following line
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
@@ -28,10 +27,7 @@ def grabDriverWins(entry):
 
 def findDriverStats(entry):
     #random int to make it less sus
-    time.sleep(random.randint(1,8))
-
-    #TODO: the function of this 7 lines up for whatever reason doesnt work? need to find why
-    #TODO: theres bound to be a better way to do the following line
+    time.sleep(random.randint(1,4))
 
     #TODO: this code does not work for some names. Extra testing is needed to fix
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
@@ -115,7 +111,7 @@ standYr = 2022
 driverList = []
 
 for year in range(1):
-    time.sleep(random.randint(2,10))
+    time.sleep(random.randint(1,5))
     standExt = "standings/" + str(standYr) + "/W/"
     print(URL + standExt)
     page = requests.get(URL+ "standings/" + str(standYr) + "/W/")
@@ -182,7 +178,7 @@ for entry in cupDriverArr:
     #The follwing function is broken, figure out why
     #stats = findDriverStats(entry)
 
-    time.sleep(random.randint(2,10))
+    time.sleep(random.randint(1,5))
     page = requests.get(URL + "driver/" + entry.strip(".").replace(",","").replace(" ", "_"))
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -230,7 +226,12 @@ for entry in cupDriverArr:
             cmpCheck = tbFind[counter].find_all(class_="col")[10].text
             cmpPrintTest=tbFind[counter].find_all(class_="col")[10]
 
-            if (int(cmpCheck) == 1):
+
+            if (cmpCheck == "\xa0"):
+                print("unicode junk: " + entry + " " + tbFind[counter].find_all(class_="col")[0].text)
+                counter+=1
+                continue
+            elif (int(cmpCheck) == 1):
                 champCount+=1
                 counter+=1
                 continue
@@ -238,8 +239,9 @@ for entry in cupDriverArr:
                 counter+=1
                 continue
             
-        except:
-            print("bad unicode prob " + entry)
+        except Exception as e:
+            print(e)
+            print(entry)
             print(counter)
             print(tbFind[counter-1].find_all(class_="col"))
             counter+=1
